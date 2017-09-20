@@ -11,10 +11,10 @@ $(document).ready(function() {
   		$(".sandwich").toggleClass("active");
 	});
 
-	$(".top_menu").click(function() {
+	$(".top_menu ul a").click(function() {
 		$(".top_menu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
-	});
+	}).append("<span>");
 
 
 	$(".toggle_menu").click(function() {
@@ -24,8 +24,7 @@ $(document).ready(function() {
 		}else {
 			$(".top_menu").fadeIn(600);	
 			$(".top_menu li a").addClass("fadeInUp animated");
-		};
-		
+		};	
 	});
 	
 });
