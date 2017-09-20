@@ -7,14 +7,23 @@ $(document).ready(function() {
 		heightDetect();
 	});
 	
-	$(".toggle_mnu, .menu_item").click(function() {
-  $(".sandwich").toggleClass("active");
-});
-	$(".toggle_mnu").click(function() {
-		if ($(".top_mnu").is(":visible")) {
-			$(".top_mnu").fadeOut(600);	
+	$(".toggle_menu").click(function() {
+  		$(".sandwich").toggleClass("active");
+	});
+
+	$(".top_menu").click(function() {
+		$(".top_menu").fadeOut(600);
+		$(".sandwich").toggleClass("active");
+	});
+
+
+	$(".toggle_menu").click(function() {
+		if ($(".top_menu").is(":visible")) {
+			$(".top_menu").fadeOut(600);
+			$(".top_menu li a").removeClass("fadeInUp animated");	
 		}else {
-			$(".top_mnu").fadeIn(600);	
+			$(".top_menu").fadeIn(600);	
+			$(".top_menu li a").addClass("fadeInUp animated");
 		};
 		
 	});
