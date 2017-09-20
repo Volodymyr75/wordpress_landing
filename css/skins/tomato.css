@@ -21,18 +21,15 @@ p {
   background-color: #222; }
 
 svg path {
-  fill: #222; }
-
-.toggle_menu {
-  background-color: #222; }
+  fill: #888; }
 
 .top_menu a:hover {
   color: #FF6347; }
-  .top_menu a:hover span {
-    background-color: rgba(255, 255, 255, 0.05);
-    display: block;
-    padding: 20px 0; }
 .top_menu a {
   letter-spacing: 4px; }
+
+.top_text p {
+  color: #FAFAFA;
+  letter-spacing: 5px; }
 
 /*# sourceMappingURL=tomato.css.map */
