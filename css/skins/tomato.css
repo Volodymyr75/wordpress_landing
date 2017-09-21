@@ -1,4 +1,5 @@
 body {
+  background-color: #fff;
   color: #222;
   letter-spacing: 1px; }
 
@@ -17,11 +18,12 @@ p {
 .color_border {
   border-color: #FF6347; }
 
-.main_color_bg {
-  background-color: #222; }
+.bg_light {
+  background-color: #FAFAFA; }
 
-svg path {
-  fill: #888; }
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
 
 .top_menu a:hover {
   color: #FF6347; }
@@ -31,5 +33,10 @@ svg path {
 .top_text p {
   color: #FAFAFA;
   letter-spacing: 5px; }
+
+.s_descr {
+  letter-spacing: 5px; }
+  .s_descr::after {
+    background-color: #222; }
 
 /*# sourceMappingURL=tomato.css.map */
